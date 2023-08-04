@@ -1,0 +1,85 @@
+body{ 
+    background-color: rgb(192, 192, 192);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+header {
+    text-align: center;
+    font-size: 36px;
+}
+
+header h1 {
+    margin: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+#grid {
+    flex: 10;
+    display: grid;
+    background-color: white;
+}
+
+#grid>div {
+    aspect-ratio: 1;
+}
+
+#grid.border>div {
+    border: 0.5px dashed gray;
+}
+
+.sidebar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar.sidebar-left {
+    align-items: start;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button.active {
+    background-color: black;
+    color: white;
+}
+
+input[type="color"] {
+    all: unset;
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.sidebar.sidebar-left > * {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 24px;
+}

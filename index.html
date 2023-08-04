@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-sketch</h1>
+    </header>
+    <div class="content">
+        <div class="sidebar sidebar-left">
+            <div class="color">
+                <input id="color-pen" type="color">
+                <label>Pen color</label>
+            </div>
+            <div class="color">
+                <input id="color-grid" type="color" value="#ffffff">
+                <label>Canvas color</label>
+            </div>
+            <div>
+                <input id="check-border" type="checkbox" checked>
+                <label>Cell border</label>
+            </div>
+            <input id="px-input" type="range" min="2" max="100" step="1" value="16">
+            <output id="px-value">16 px</output>
+        </div>
+        <div id="grid" class="border"></div>
+        <div class="sidebar">
+            <button id="btn-color">Color mode</button>
+            <button id="btn-rainbow">Rainbow mode</button>
+            <button id="btn-eraser">Eraser</button>
+            <button id="btn-clear">Clear</button>
+        </div>
+    </div>
+    <footer>Made by Danila Nakonechny</footer>
+</body>
+</html>
